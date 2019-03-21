@@ -15,8 +15,7 @@
 #
 
 /boot emmc /dev/block/platform/bootdevice/by-name/boot
-/data ext4 /dev/block/platform/bootdevice/by-name/userdata
-waitcheckquotaformattableresizeencryptable=/dev/block/platform/bootdevice/by-name/metadata
+/data ext4 /dev/block/platform/bootdevice/by-name/userdata encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /system ext4 /dev/block/platform/bootdevice/by-name/system
 /cache ext4 /dev/block/platform/bootdevice/by-name/cache
 /misc emmc /dev/block/platform/bootdevice/by-name/para
